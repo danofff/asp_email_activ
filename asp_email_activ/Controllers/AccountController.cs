@@ -32,6 +32,7 @@ namespace asp_email_activ.Controllers
         {
             get
             {
+
                 return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
             }
             private set 
